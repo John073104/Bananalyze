@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bananalyze</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            font-family: 'Arial', sans-serif; /* Change to your desired font */
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #f59e0b; 
+        }
+
+        .hero {
+            background-image: url("img/background.jpg"); 
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin: 20px 0;
+        }
+
+        .button {
+            background-color: #f59e0b; 
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #d97706; 
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/hero.png" alt="Logo">
+                <span class="text-3xl font-bold text-gray-900">Banana Analyze</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to Banana Analyze</h1>
+        <p>Your go-to tool for banana analysis!</p>
+        <a href="#services" class="button">Get Started</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-6">About Us</h2>
+            <p class="text-gray-700">
+                We are dedicated to providing the best banana analysis services using state-of-the-art technology. Our team of experts is here to help you understand your bananas better.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-50 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-6">Our Services</h2>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>Banana Quality Assessment</li>
+                <li>Nutritional Analysis</li>
+                <li>Banana Ripeness Scanning</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-6">Contact Us</h2>
+            <p class="text-gray-700 mb-4">For inquiries, please reach out:</p>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>Email: <a href="mailto:info@bananaanalyze.com" class="text-blue-600 hover:underline">info@bananaanalyze.com</a></li>
+                <li>Phone: <a href="tel:+1234567890" class="text-blue-600 hover:underline">+1 234 567 890</a></li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>
